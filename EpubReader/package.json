@@ -1,0 +1,35 @@
+{
+  "name": "EpubReader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.9.0",
+    "@react-native-community/slider": "^2.0.9",
+    "@lightbase/react-native-orientation": "^3.2.1",
+    "react-native-static-server": "^0.4.2",
+    "react-native-webview": "^9.0.2",
+    "react-native-zip-archive": "^5.0.2",
+    "epubjs-rn": "file:./epubjs-rn-0.1.6.tgz",
+    "react": "16.11.0",
+    "react-native": "0.62.0",
+    "react-native-vector-icons": "^6.6.0",
+    "rn-fetch-blob": "^0.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

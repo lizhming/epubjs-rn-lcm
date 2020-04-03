@@ -1,0 +1,60 @@
+{
+  "name": "epubjs-rn-lcm",
+  "version": "0.1.0",
+  "repository": "https://github.com/lizhming/epubjs-rn-lcm",
+  "main": "./components/index.js",
+  "scripts": {
+    "start": "node EpubReader/node_modules/react-native/local-cli/cli.js start",
+    "contents": "webpack --config contents/webpack.config.js",
+    "build": "./node_modules/.bin/babel src/ -d components/",
+    "watch": "./node_modules/.bin/babel src/ -d components/ -w",
+    "local": "./node_modules/.bin/gulp watch",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@lightbase/react-native-orientation": "^3.2.1",
+    "@react-native-community/async-storage": "^1.5.0",
+    "base-64": "^0.1.0",
+    "buffer": "^5.2.1",
+    "epubjs": "^0.3.84",
+    "events": "^3.0.0",
+    "i": "^0.3.6",
+    "jszip": "^3.2.1",
+    "lodash": "^4.17.11",
+    "path-webpack": "0.0.3",
+    "react": "16.11.0",
+    "react-native": "0.62.0",
+    "react-native-static-server": "^0.4.2",
+    "react-native-webview": "^9.0.2",
+    "react-native-zip-archive": "^5.0.2",
+    "rn-fetch-blob": "^0.12.0",
+    "stream": "0.0.2",
+    "stream-browserify": "^2.0.2",
+    "util": "^0.12.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^25.2.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-static-fs": "^1.2.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "gulp": "^4.0.2",
+    "jest": "^25.2.6",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "files": [
+    "components",
+    "package.json"
+  ]
+}

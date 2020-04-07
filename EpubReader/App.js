@@ -9,7 +9,7 @@ import {
   StatusBar
 } from 'react-native';
 
-import { Epub, Streamer } from "./src/index";
+import { Epub, Streamer } from "epubjs-rn";
 
 import TopBar from './app/TopBar'
 import BottomBar from './app/BottomBar'
@@ -37,12 +37,10 @@ class EpubReader extends Component {
   componentDidMount() {
     this.streamer.start()
       .then((origin) => {
-        console.log('ooo '+origin);
         this.setState({origin})
         return this.streamer.get(this.state.url);
       })
       .then((src) => {
-        console.log(src);
         return this.setState({src});
       });
 
@@ -66,7 +64,7 @@ class EpubReader extends Component {
           animated={false} />
         <Epub style={styles.reader}
               ref="epub"
-              // src={"https://s3.amazonaws.com/epubjs/books/moby-dick/OPS/package.opf"}
+              //src={"https://s3.amazonaws.com/epubjs/books/moby-dick.epub"}
               src={this.state.src}
               flow={this.state.flow}
               location={this.state.location}

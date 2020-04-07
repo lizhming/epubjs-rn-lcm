@@ -1,7 +1,7 @@
 {
-  "name": "epubjs-rn-lcm",
-  "version": "0.1.0",
-  "repository": "https://github.com/lizhming/epubjs-rn-lcm",
+  "name": "epubjs-rn",
+  "version": "0.1.6",
+  "repository": "https://github.com/lizhming/epubjs-rn",
   "main": "./components/index.js",
   "scripts": {
     "start": "node EpubReader/node_modules/react-native/local-cli/cli.js start",
